@@ -1,0 +1,38 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+
+class todoList
+{
+
+-String items
+-String description
+-String dueDate
+-String completed
+
+
+public todoList(){
+        this.setitem(item);
+        this.setdueDate(dueDate);
+        this.setDescription(description);
+        this.setcomplete(complete);
+    }
+
+
+class app
+{
++public void main(){launch();}
+
+}
+
+class controller{
+-addButton
+-removeButton
+-save
+-load
+-deleteAll
+-displayComp
+-displayIncomp
+}
+todoList -- controller
+@enduml

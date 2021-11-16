@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<SplitPane dividerPositions="0.7249322493224932" orientation="VERTICAL" prefHeight="740.0" prefWidth="691.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ucf.assignments.Controller">
+   <items>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="406.0" prefWidth="694.0">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="17.0" prefWidth="174.0" text="Todo List">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="saveButton" layoutX="417.0" layoutY="21.0" mnemonicParsing="false" onAction="#saveButton" text="Save" />
+            <Button fx:id="loadButton" layoutX="474.0" layoutY="21.0" mnemonicParsing="false" onAction="#loadButton" text="Load" />
+            <Button fx:id="addButton" layoutX="14.0" layoutY="131.0" mnemonicParsing="false" onAction="#addButton" text="add" />
+            <TextField fx:id="descFl" layoutX="336.0" layoutY="131.0" prefHeight="25.0" prefWidth="189.0" promptText="Add description" />
+            <TextField fx:id="itemFl" layoutX="67.0" layoutY="131.0" prefHeight="25.0" prefWidth="95.0" promptText="add item" />
+
+            <Button fx:id="removeButton" layoutX="277.0" layoutY="191.0" mnemonicParsing="false" onAction="#removeButton" text="remove" />
+            <Button fx:id="changeButton" layoutX="188.0" layoutY="191.0" mnemonicParsing="false" onAction="#changeButton" text="change" />
+
+            <Label layoutX="103.0" layoutY="97.0" text="Item" />
+            <Label layoutX="232.0" layoutY="105.0" text="dueDate" />
+            <Label layoutX="399.0" layoutY="105.0" prefHeight="17.0" prefWidth="64.0" text="description" />
+            <Button fx:id="displayIncom" layoutX="361.0" layoutY="63.0" mnemonicParsing="false" onAction="#displayIncom" text="displayIncompeleted" />
+            <Button fx:id="displayCom" layoutX="503.0" layoutY="63.0" mnemonicParsing="false" onAction="#displayComp" text="dislpayCompleted" />
+            <Button fx:id="deleteAll" layoutX="527.0" layoutY="21.0" mnemonicParsing="false" onAction="#deleteAll" text="deleteAll" />
+            <TextField fx:id="itemRFl" layoutX="67.0" layoutY="191.0" prefHeight="25.0" prefWidth="95.0" promptText="remove item" />
+            <TextField fx:id="dateFl" layoutX="191.0" layoutY="131.0" prefHeight="25.0" prefWidth="126.0" promptText="YYYY-MM-DD" />
+            <TextField layoutX="544.0" layoutY="131.0" prefHeight="25.0" prefWidth="30.0" />
+            <Label layoutX="590.0" layoutY="135.0" text="Complete" />
+      
+      
+         </children>
+      </AnchorPane>
+      <ListView prefHeight="314.0" prefWidth="689.0" />
+   </items>
+</SplitPane>

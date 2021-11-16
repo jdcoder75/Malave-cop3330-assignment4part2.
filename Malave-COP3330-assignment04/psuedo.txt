@@ -1,0 +1,140 @@
+package ucf.assignments;
+/*
+ *  UCF COP3330 Fall 2021 Assignment 4 Solution
+ *  Copyright 2021 Jose Malave
+ */
+
+
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+import java.io.IOException;
+
+
+public class App extends Application  {
+
+    @Override
+    public void start(Stage stage) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("app-view.fxml"));
+        Scene scene = new Scene(fxmlLoader.load());
+        stage.setTitle("Todo List");
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    public static void main(String[] args) {
+        launch();
+    }
+
+
+}
+
+
+
+class todoList {
+    private String item;
+    private String dueDate;
+    private String description;
+    private String complete;
+
+    //constructor
+    public todoList(String item, String dueDate, String description, String complete){
+        this.setitem(item);
+        this.setdueDate(dueDate);
+        this.setDescription(description);
+        this.setcomplete(complete);
+    }
+
+    // here is where we ask the user to create a todo list
+    //after ask if they want to add, remove, edit, display, or
+
+
+
+     here we want to create the getters and setters for our todolist
+
+}
+
+
+
+
+public class Controller
+{
+
+    @FXML
+    Button addButton;
+    @FXML
+    Button removeButton;
+    @FXML
+    Button changeButton;
+    @FXML
+    Button saveButton;
+    @FXML
+    Button loadButton;
+    @FXML
+    Button deleteAll;
+    @FXML
+    Button displayIncom;
+    @FXML
+    Button displayComp;
+    @FXML
+    TextField itemFl;
+    @FXML
+    TextField itemRFl;
+    @FXML
+    TextField dateFl;
+    @FXML
+    TextField descFl;
+    @FXML
+    TextField compFl;
+    @FXML
+    ListView<todoList> todoListView;
+
+    ObservableList<todoList> list = FXCollections.observableArrayList();
+
+
+
+    @FXML
+    private void addButton(ActionEvent event){
+        create the fields for our list view
+    }
+    private void refresh(){
+        refresh our input areas
+    }
+
+    @FXML
+    private void removeButton(ActionEvent ActionEvent){
+        remove only one element from the list view
+    }
+
+    @FXML
+    private void deleteAll(ActionEvent event){
+        delete everything in list view
+
+    }
+
+    public void changeButton(ActionEvent event) {
+       change what is inside the list view
+    }
+
+    @FXML
+    private void saveButton(ActionEvent event){
+        here we want to write to a file our list view
+    }
+    @FXML
+    private void loadButton(ActionEvent event){
+        here we want to read in a file and send it to the list view
+
+    }
+
+    @FXML
+    private void displayIncom(ActionEvent event) {
+       here we want to see the incomplete items
+    }
+
+    @FXML
+    private void displayComp(ActionEvent event){
+        here we want to see the completed items
+        }
+    }
